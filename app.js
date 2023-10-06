@@ -1,8 +1,12 @@
 var person = {
     name: 'Diogo',
     age: 26,
-    hobbies: ['Sports', 'Cooking', 'Gaming', 'Coding', 'Reading', 'Writing']
+    hobbies: ['Sports', 'Cooking', 'Gaming', 'Coding', 'Reading', 'Writing'],
+    role: [2, 'Developer']
 };
+person.role.push('admin');
+person.role.push[1] = 10;
+person.role = [0, 'admin', 'user'];
 var favoriteActivities;
 favoriteActivities = ['Coding'];
 console.log(person);
