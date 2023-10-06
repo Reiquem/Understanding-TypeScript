@@ -1,9 +1,17 @@
-function add(a: number, b: number) {
-  return a + b;
+function add(a: number, b: number, showResult: boolean, phrase: string) {
+	//   if (typeof a !== "number" || typeof b !== "number") {
+	//     throw new Error("Incorrect input!");
+	//   }
+	const result = a + b
+	if (showResult) {
+		console.log(phrase + result)
+	} else return result
 }
 
-const number1 = 5;
-const number2 = 2.8;
+let number1: number
+number1 = 5
+const number2 = 2.8
+const printResul = true
+let resultPhrase = 'Result is: '
 
-const result = add(number1, number2);
-console.log(result);
+add(number1, number2, printResul, resultPhrase)
